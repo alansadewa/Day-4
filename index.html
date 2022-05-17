@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Project</title>
+    <link rel="stylesheet" href="myProject.css"/>
+    <script src="https://kit.fontawesome.com/262df2ebc5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Buat navbar -->
+    <nav>
+        <div class="nav-left">
+          <img src="asset/logo.png" />
+          <ul>
+            <li>
+              <a href="homepage.html">Home</a>
+            </li>
+  
+            <li>
+              <a href="index.html" class="active">My Project</a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="nav-right">
+          <a href="form.html">Contact Me</a>
+        </div>
+      </nav>
+
+      <!-- Main Section -->
+
+      <form>
+          <h2>ADD MY PROJECT</h2>
+
+          <div class="name">
+              <label for="project-name">Project Name</label>
+              <input type="text" id="project-name"/>
+          </div>
+
+          <div class="date">
+              <div class="pertama">
+                  <label for="start-date">Start Date</label>
+                  <input type="date" id="start-date"/>
+              </div>
+
+              <div class="kedua">
+                  <label for="end-date">End Date</label>
+                  <input type="date" id="end-date"/>
+              </div>
+          </div>
+
+          <div class="desc">
+              <label for="description">Description</label>
+              <textarea id="description"></textarea>
+          </div>
+
+          
+          <div class="cek">
+            <label for="tab">Technologies</label>
+              <table id="tab">
+                  <tr>
+                      <td><input type="checkbox" value="HTML" id="html"/>HTML</td>
+                      <td><input type="checkbox" value="JS" id="js"/>JavaScript</td>
+                  </tr>
+    
+                  <tr>
+                      <td><input type="checkbox" value="CSS" id="css"/>CSS</td>
+                      <td><input type="checkbox" value="Node JS" id="node"/>Node JS</td>
+                  </tr>
+              </table>
+            </div>
+        
+          <div class="upp">
+              <p>Upload Image</p>
+              <div class="uppContainer">
+                  <div class="word">
+                      <label for="upload">choose</label>
+                  </div>
+
+                  <div class="uppIcon">
+                    <label for="upload"><i class="fa-solid fa-paperclip fa-xl"></i></label>
+                  </div>
+              </div>
+              <input type="file" id="upload" style="display: none;">
+          </div>
+          
+          <button type="button" onclick="submitProject()">submit</button>
+        </form>
+
+        <div class="project" id="myCard" style="display: none;">
+        <div>
+            <h2>MY PROJECT</h2>
+        </div>
+        <div id="card" class="cardContainer">
+            <!-- <div class="card">
+                <img src="asset/person.jpg">
+                <div class="atas">
+                    <h3>Dumbways Mobile app 1</h3>
+                    <p>durasi = 3 bulan</p>
+                </div>
+                <p style="text-align: justify; font-size: 14px; margin-bottom: 27px;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing. Quaritum deserunts, rerum possimum ex doloribus consectetur culpa facere!</p>
+    
+                    <div class="icon">
+                    <i class="fa-solid fa-file-code fa-xl"></i>                
+                    <i class="fa-brands fa-css3-alt fa-xl"></i>
+                    <i class="fa-brands fa-js-square fa-xl"></i>
+                    <i class="fa-brands fa-node fa-2xl"></i>
+                </div>
+    
+                <div class="button">
+                    <button type="button">edit</button>
+                    <button type="delete">delete</button>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>
